@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  ::selection { @apply bg-scan-500/30; }
+  :focus-visible { @apply outline-none ring-2 ring-scan-500 ring-offset-2 ring-offset-white dark:ring-offset-ink-950; }
+}
+
+@layer utilities {
+  .card {
+    @apply rounded-xl border border-ink-700/10 dark:border-ink-700 bg-white dark:bg-ink-900 shadow-sm;
+  }
+  .scrollbar-thin::-webkit-scrollbar { width: 6px; height: 6px; }
+  .scrollbar-thin::-webkit-scrollbar-thumb { @apply bg-ink-600 rounded-full; }
+}

@@ -1,0 +1,39 @@
+# AttendX Python Worker — Python 3.13 compatible
+# pip install -r requirements.txt
+
+# ── Kafka (pure-Python — no native DLLs, works on all platforms) ───────────────
+kafka-python>=3.0.0
+
+# ── Redis ─────────────────────────────────────────────────────────────────────
+redis>=5.0.0
+
+# ── PostgreSQL ────────────────────────────────────────────────────────────────
+psycopg2-binary>=2.9.9
+
+# ── Cloudinary ────────────────────────────────────────────────────────────────
+cloudinary>=1.40.0
+
+# ── HTTP ──────────────────────────────────────────────────────────────────────
+requests>=2.32.0
+
+# ── Image processing ──────────────────────────────────────────────────────────
+opencv-python-headless>=4.10.0
+Pillow>=10.0.0
+numpy>=1.26.0
+
+# ── Local face matching (DeepFace) ────────────────────────────────────────────
+# DeepFace downloads model weights on first run (~500MB cached at ~/.deepface/)
+# If install fails on Python 3.13, set AWS creds to use Rekognition mode instead.
+deepface>=0.0.93
+tf-keras>=2.18.0
+
+# ── FastAPI + Uvicorn (matcher_worker) ────────────────────────────────────────
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.0
+python-multipart>=0.0.9
+
+# ── AWS Rekognition (optional) ────────────────────────────────────────────────
+boto3>=1.34.0
+
+# ── Environment ───────────────────────────────────────────────────────────────
+python-dotenv>=1.0.0
