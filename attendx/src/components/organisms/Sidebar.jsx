@@ -90,7 +90,7 @@ export default function Sidebar() {
           <ScanFace size={18} />
         </div>
         <div>
-          <span className="font-display text-base font-semibold text-ink-950 dark:text-mist">AttendX</span>
+          <span className="font-display text-base font-semibold text-ink-950 dark:text-mist">ClassRoll</span>
           {isSuperAdmin && (
             <p className="text-[10px] font-semibold text-violet-400 uppercase tracking-widest">Platform Owner</p>
           )}

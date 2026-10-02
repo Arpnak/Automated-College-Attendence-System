@@ -40,7 +40,7 @@ export default function SignupPage() {
     setLoading(true);
     try {
       const user = await register({ name: form.name, email: form.email, password: form.password, role });
-      toast.success('Account created — welcome to AttendX!');
+      toast.success('Account created — welcome to ClassRoll!');
       navigate(REDIRECT[user.role] || '/login', { replace: true });
     } catch (err) {
       setError(err.message);

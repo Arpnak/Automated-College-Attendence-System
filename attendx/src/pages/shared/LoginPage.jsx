@@ -46,7 +46,7 @@ export default function LoginPage() {
           <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-scan-500/15 text-scan-500">
             <ScanFace size={22} />
           </div>
-          <h1 className="font-display text-xl font-semibold text-mist">Sign in to AttendX</h1>
+          <h1 className="font-display text-xl font-semibold text-mist">Sign in to ClassRoll</h1>
           <p className="text-sm text-fog">Admin, professor, or student — one login.</p>
         </div>
 
@@ -57,7 +57,7 @@ export default function LoginPage() {
             required
             value={form.email}
             onChange={(e) => setForm({ ...form, email: e.target.value })}
-            placeholder="you@attendx.edu"
+            placeholder="you@classroll.in"
           />
           <TextField
             label="Password"
@@ -78,7 +78,7 @@ export default function LoginPage() {
             </Link>
           </p>
           <p className="text-center text-[11px] text-fog/70">
-            Demo: try priya@attendx.edu / reyes@attendx.edu / jblake@attendx.edu (any password)
+            Demo: try priya@classroll.in / reyes@classroll.in / jblake@classroll.in (any password)
           </p>
         </form>
       </div>

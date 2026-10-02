@@ -8,9 +8,16 @@ import pool from './pool.js';
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 
-const SUPER_ADMIN_EMAIL    = process.env.SUPER_ADMIN_EMAIL    || 'arpna@classroll.in';
-const SUPER_ADMIN_PASSWORD = process.env.SUPER_ADMIN_PASSWORD || 'arpna@1234';
-const SUPER_ADMIN_NAME     = process.env.SUPER_ADMIN_NAME     || 'Arpna (Platform Owner)';
+const SUPER_ADMIN_EMAIL    = process.env.SUPER_ADMIN_EMAIL;
+const SUPER_ADMIN_PASSWORD = process.env.SUPER_ADMIN_PASSWORD;
+const SUPER_ADMIN_NAME     = process.env.SUPER_ADMIN_NAME || 'Platform Owner';
+
+if (!SUPER_ADMIN_EMAIL || !SUPER_ADMIN_PASSWORD) {
+  throw new Error(
+    '[seed] SUPER_ADMIN_EMAIL and SUPER_ADMIN_PASSWORD must be set in your .env file. ' +
+    'See .env.example for reference.'
+  );
+}
 
 // Runs the legacy super_admin migration (adds role enum value + institutions table)
 export async function runSuperAdminMigration() {

@@ -24,7 +24,7 @@ const BACKOFF_MS  = [1000, 2000, 4000, 8000, 15000];
 
 function getToken() {
   try {
-    const raw = localStorage.getItem('attendx.auth');
+    const raw = localStorage.getItem('classroll.auth');
     return raw ? JSON.parse(raw).token : null;
   } catch { return null; }
 }

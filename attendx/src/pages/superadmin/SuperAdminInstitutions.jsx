@@ -137,7 +137,7 @@ export default function SuperAdminInstitutions() {
       <div className="flex items-center justify-between">
         <div>
           <h1 className="font-display text-2xl font-bold text-mist">Institutions</h1>
-          <p className="text-sm text-fog mt-0.5">Manage all universities on AttendX.</p>
+          <p className="text-sm text-fog mt-0.5">Manage all universities on ClassRoll.</p>
         </div>
         <Button icon={Plus} onClick={() => { setForm({ name: '', domain: '' }); setCreateOpen(true); }}>
           New Institution

@@ -5,7 +5,7 @@ const WS_BASE = import.meta.env.VITE_WS_URL || '';
 
 function getToken() {
   try {
-    const raw = localStorage.getItem('attendx.auth');
+    const raw = localStorage.getItem('classroll.auth');
     return raw ? JSON.parse(raw).token : null;
   } catch { return null; }
 }

@@ -48,7 +48,7 @@ setupWebSocket(server);
 
 const PORT = process.env.PORT || 3001;
 server.listen(PORT, async () => {
-  console.log(`AttendX API Gateway on :${PORT}`);
+  console.log(`ClassRoll API Gateway on :${PORT}`);
   // Auto-apply migrations then seed super admin
   await runSuperAdminMigration();
   await runV2Migration();

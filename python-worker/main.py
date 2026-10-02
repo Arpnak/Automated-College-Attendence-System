@@ -1,5 +1,5 @@
 """
-AttendX Python Face Worker
+ClassRoll Python Face Worker
 ==========================
 FastAPI microservice that:
 1. POST /index   — indexes a student's reference face photo
@@ -61,7 +61,7 @@ cloudinary.config(
     secure      = True,
 )
 
-app = FastAPI(title="AttendX Face Worker", version="1.2.0")
+app = FastAPI(title="ClassRoll Face Worker", version="1.2.0")
 
 def get_db():
     return psycopg2.connect(DB_URL, cursor_factory=psycopg2.extras.RealDictCursor)

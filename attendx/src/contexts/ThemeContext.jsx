@@ -1,7 +1,7 @@
 import { createContext, useEffect, useMemo, useState } from 'react';
 
 export const ThemeContext = createContext(null);
-const STORAGE_KEY = 'attendx.theme';
+const STORAGE_KEY = 'classroll.theme';
 
 function getInitialTheme() {
   const stored = localStorage.getItem(STORAGE_KEY);

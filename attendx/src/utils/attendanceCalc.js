@@ -1,5 +1,5 @@
 /**
- * AttendX Attendance Calculation Engine
+ * ClassRoll Attendance Calculation Engine
  *
  * Variables:
  *   E = elapsed valid course days (up to and including today, with smart today-handling)

@@ -4,7 +4,7 @@ const API_BASE = import.meta.env.VITE_API_URL || '/api';
 
 function getToken() {
   try {
-    const raw = localStorage.getItem('attendx.auth');
+    const raw = localStorage.getItem('classroll.auth');
     return raw ? JSON.parse(raw).token : null;
   } catch {
     return null;
@@ -12,7 +12,7 @@ function getToken() {
 }
 
 function logout() {
-  localStorage.removeItem('attendx.auth');
+  localStorage.removeItem('classroll.auth');
   window.location.href = '/login';
 }
 

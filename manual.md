@@ -1,6 +1,6 @@
-# Auto_Attend Platform - Startup Manual
+# ClassRoll Platform - Startup Manual
 
-This manual provides the terminal commands to start each microservice and worker of the Auto_Attend platform independently from scratch.
+This manual provides the terminal commands to start each microservice and worker of the ClassRoll platform independently from scratch.
 
 ## 1. Infrastructure (Database, Redis, Kafka)
 Make sure your backing services are running before starting any node/python processes.
@@ -72,7 +72,7 @@ Always let `server.js` manage the workers!
 
 ---
 
-## 6. React Frontend (AttendX)
+## 6. React Frontend (ClassRoll)
 This is the Vite-based React application for students and professors.
 
 **Directory:** `attendx`

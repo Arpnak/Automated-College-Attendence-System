@@ -2,7 +2,7 @@ import { createContext, useCallback, useEffect, useMemo, useState } from 'react'
 import * as authService from '../services/authService';
 
 export const AuthContext = createContext(null);
-const STORAGE_KEY = 'attendx.auth';
+const STORAGE_KEY = 'classroll.auth';
 
 function readStoredAuth() {
   try {

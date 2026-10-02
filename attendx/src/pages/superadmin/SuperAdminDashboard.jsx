@@ -69,7 +69,7 @@ export default function SuperAdminDashboard() {
             <span className="text-xs font-mono text-scan-400 uppercase tracking-wider">Platform Owner</span>
           </div>
           <h1 className="font-display text-2xl font-bold text-mist">Super Admin Console</h1>
-          <p className="text-sm text-fog mt-1">Full visibility across all institutions on AttendX.</p>
+          <p className="text-sm text-fog mt-1">Full visibility across all institutions on ClassRoll.</p>
         </div>
         {live.length > 0 && (
           <div className="flex items-center gap-2 rounded-xl bg-status-present/10 border border-status-present/20 px-4 py-2">
